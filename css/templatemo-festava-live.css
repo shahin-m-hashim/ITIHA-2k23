@@ -225,6 +225,25 @@ strong {
   background-color: var(--section-bg-color);
 }
 
+#section_3
+{
+  background-color: #d3937f;
+}
+
+#section_5 {
+  background-color: #ccc5ed;
+}
+
+#section_6 {
+  background-color: #ccc5ed;
+}
+
+.pricing-section
+{
+
+}
+
+
 .section-overlay {
   background-color: var(--dark-color);
   position: absolute;
@@ -369,10 +388,6 @@ strong {
   left: 0;
 }
 
-.sticky-wrapper.is-sticky .navbar {
-  background-color: var(--dark-color);
-}
-
 .navbar {
   background: transparent;
   z-index: 9;
@@ -472,6 +487,15 @@ strong {
   top: 8px;
 }
 
+/*---------------------------------------
+  NAVIGATION GLASS EFFECT      
+-----------------------------------------*/
+
+.sticky-wrapper.is-sticky .navbar {
+  background-color: hsla(0, 0%, 100%, 0.156);
+  backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
 
 /*---------------------------------------
   HERO        
@@ -508,13 +532,13 @@ strong {
   HERO Section Main TEXT        
 -----------------------------------------*/
 .neon_main_txt1 {
-text-shadow: 0 0 10px #00ff15, 
-0 0 20px #00ff15, 
-0 0 30px #00ff15, 
-0 0 40px #00ff15, 
-0 0 70px #00ff15, 
-0 0 80px #00ff15, 
-0 0 100px #00ff15;
+  text-shadow: 0 0 10px #00ff15, 
+  0 0 20px #00ff15, 
+  0 0 30px #00ff15, 
+  0 0 40px #00ff15, 
+  0 0 70px #00ff15, 
+  0 0 80px #00ff15, 
+  0 0 100px #00ff15;
 }
 
 .neon_main_txt2 {
@@ -526,8 +550,6 @@ text-shadow: 0 0 10px #00ff15,
     0 0 80px #00c9ff,
     0 0 100px #00c9ff;
 }
-
-
 
 /*---------------------------------------
   ABOUT              
@@ -1002,7 +1024,9 @@ text-shadow: 0 0 10px #00ff15,
   }
   
   .navbar {
-    background-color: var(--dark-color);
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
 
   .navbar-expand-lg .navbar-nav {
