@@ -504,6 +504,30 @@ strong {
   height: 100%;
 }
 
+/*---------------------------------------
+  HERO Section Main TEXT        
+-----------------------------------------*/
+.neon_main_txt1 {
+text-shadow: 0 0 10px #00ff15, 
+0 0 20px #00ff15, 
+0 0 30px #00ff15, 
+0 0 40px #00ff15, 
+0 0 70px #00ff15, 
+0 0 80px #00ff15, 
+0 0 100px #00ff15;
+}
+
+.neon_main_txt2 {
+  text-shadow: 0 0 10px #00c9ff,
+    0 0 20px #00c9ff,
+    0 0 30px #00c9ff,
+    0 0 40px #00c9ff,
+    0 0 70px #00c9ff,
+    0 0 80px #00c9ff,
+    0 0 100px #00c9ff;
+}
+
+
 
 /*---------------------------------------
   ABOUT              
