@@ -316,10 +316,10 @@ strong {
   CUSTOM BUTTON               
 -----------------------------------------*/
 .custom-btn {
-  background: var(--custom-btn-bg-color);
+  background-color:#81D3EE;
   border: 2px solid transparent;
   border-radius: var(--border-radius-large);
-  color: var(--white-color);
+  color: var(--dark-color);
   font-size: var(--btn-font-size);
   font-weight: var(--font-weight-bold);
   line-height: normal;
@@ -328,7 +328,7 @@ strong {
 }
 
 .custom-btn:hover {
-  background: var(--custom-btn-bg-hover-color);
+  background-color: #2E8CAE;
   color: var(--white-color);
 }
 
@@ -418,7 +418,7 @@ strong {
 
 .navbar-nav .nav-link.active, 
 .navbar-nav .nav-link:hover {
-  color: var(--secondary-color);
+  color: #81D3EE;
 }
 
 .navbar-toggler {
@@ -531,7 +531,7 @@ strong {
 /*---------------------------------------
   HERO Section Main TEXT        
 -----------------------------------------*/
-.neon_main_txt1 {
+/* .neon_main_txt1 {
   text-shadow: 0 0 10px #00ff15, 
   0 0 20px #00ff15, 
   0 0 30px #00ff15, 
@@ -542,19 +542,18 @@ strong {
 }
 
 .neon_main_txt2 {
-  /* display: inline-block; */
-  font-size: 100px;
-  color: #00c9ff;
-  text-shadow: 0 0 10px #00c9ff,
-    0 0 20px #00c9ff,
-    0 0 30px #00c9ff,
-    0 0 40px #00c9ff,
-    0 0 70px #00c9ff,
-    0 0 80px #00c9ff,
-    0 0 100px #00c9ff;
-}
+  font-size: 120px;
+  color: #00a2ff;
+  text-shadow: 0 0 10px #00a2ff,
+    0 0 20px #00a2ff,
+    0 0 30px #00a2ff,
+    0 0 40px #00a2ff,
+    0 0 70px #00a2ff,
+    0 0 80px #00a2ff,
+    0 0 100px #00a2ff;
+} */
 
-.neon_main_txt2 span {
+/* .neon_main_txt2 span {
   display: inline-block;
   animation: flip 2s ease-in-out infinite alternate;
 }
@@ -607,7 +606,7 @@ strong {
   to {
     transform: rotateY(360deg);
   }
-}
+} */
 
 /*---------------------------------------
   ABOUT              
@@ -835,7 +834,7 @@ strong {
   PRICING              
 -----------------------------------------*/
 .pricing-thumb {
-  border: 5px dotted var(--dark-color);
+  border: 2px solid var(--dark-color);
   border-radius: var(--border-radius-medium);
   position: relative;
   padding: 50px;
@@ -1012,7 +1011,7 @@ strong {
 }
 
 .social-icon-link {
-  background: var(--secondary-color);
+  background: #2E8CAE;
   border-radius: var(--border-radius-large);
   color: var(--white-color);
   font-size: var(--copyright-font-size);
