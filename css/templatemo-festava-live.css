@@ -226,16 +226,28 @@ strong {
 }
 
 #section_3
-{
+{ 
+  background-image: url('../images/anime/w4.jpg');
   background-color: #d3937f;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #section_5 {
+  background-image: url('../images/anime/w7.jpg');
   background-color: #ccc5ed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #section_6 {
+  background-image: url('../images/anime/w8.jpg');
   background-color: #ccc5ed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 
@@ -509,7 +521,7 @@ strong {
 
 .hero-section .section-overlay {
   z-index: 2;
-  opacity: 0.45;
+  opacity: 0.3;
 }
 
 .hero-section .container {
@@ -528,6 +540,7 @@ strong {
 -----------------------------------------*/
 .neon_main_txt1 {
   font-size: 40px;
+  font-family: 'Gang of Three', cursive;
   text-shadow: 0 0 10px #ff8800, 
   0 0 20px #ff8800, 
   0 0 30px #ff8800, 
@@ -539,6 +552,7 @@ strong {
 
 .neon_main_txt2 {
   font-size: 100px;
+  font-family: 'Gang of Three', cursive;
   color: #00a2ff;
   text-shadow: 0 0 10px #00a2ff,
     0 0 20px #00a2ff,
@@ -608,12 +622,14 @@ strong {
   ABOUT              
 -----------------------------------------*/
 .about-section {
-  background-image: url('../images/edward-unsplash-blur.jpg');
+  background-image: url('../images/anime/soro.jpg');
   background-color: #704010;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+  /* background-size: 100% 100%; */
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .about-image {
@@ -654,11 +670,13 @@ strong {
   TICKET               
 -----------------------------------------*/
 .ticket-section {
-  background-image: url('../images/nicholas-green-unsplash-blur.jpg');
+  background-image: url('../images/anime/Dragon-Ball.jpg');
+  background-color: #704010;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  position: relative;
   padding-top: 130px;
+  position: relative;
 }
 
 .ticket-form {
@@ -749,7 +767,7 @@ strong {
 -----------------------------------------*/
 
 .schedule-section {
-  background-image: url('../images/nainoa-shizuru-unsplash-blur.jpg');
+  background-image: url('../images/anime/w3.jpg');
   background-color: #242424;
   background-repeat: no-repeat;
   background-position: center;
@@ -1074,6 +1092,7 @@ strong {
   .section-padding {
     padding-top: 50px;
     padding-bottom: 50px;
+    height: auto;
   }
   
   .navbar {
@@ -1083,7 +1102,13 @@ strong {
   }
 
   .navbar-expand-lg .navbar-nav {
-    padding-bottom: 30px;
+    background-color: rgb(169 144 144 / 70%);
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 5px;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-item {
+    border: 1px solid rgb(81, 73, 73);
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {
