@@ -238,11 +238,6 @@ strong {
   background-color: #ccc5ed;
 }
 
-.pricing-section
-{
-
-}
-
 
 .section-overlay {
   background-color: var(--dark-color);
@@ -531,18 +526,19 @@ strong {
 /*---------------------------------------
   HERO Section Main TEXT        
 -----------------------------------------*/
-/* .neon_main_txt1 {
-  text-shadow: 0 0 10px #00ff15, 
-  0 0 20px #00ff15, 
-  0 0 30px #00ff15, 
-  0 0 40px #00ff15, 
-  0 0 70px #00ff15, 
-  0 0 80px #00ff15, 
-  0 0 100px #00ff15;
+.neon_main_txt1 {
+  font-size: 40px;
+  text-shadow: 0 0 10px #ff8800, 
+  0 0 20px #ff8800, 
+  0 0 30px #ff8800, 
+  0 0 40px #ff8800, 
+  0 0 70px #ff8800, 
+  0 0 80px #ff8800, 
+  0 0 100px #ff8800;
 }
 
 .neon_main_txt2 {
-  font-size: 120px;
+  font-size: 100px;
   color: #00a2ff;
   text-shadow: 0 0 10px #00a2ff,
     0 0 20px #00a2ff,
@@ -551,9 +547,9 @@ strong {
     0 0 70px #00a2ff,
     0 0 80px #00a2ff,
     0 0 100px #00a2ff;
-} */
+}
 
-/* .neon_main_txt2 span {
+.neon_main_txt2 span {
   display: inline-block;
   animation: flip 2s ease-in-out infinite alternate;
 }
@@ -606,7 +602,7 @@ strong {
   to {
     transform: rotateY(360deg);
   }
-} */
+}
 
 /*---------------------------------------
   ABOUT              
@@ -1121,6 +1117,30 @@ strong {
 
   .ticket-form {
     padding: 30px;
+  }
+}
+
+/*---------------------------------------
+  HERO Section Main TEXT        
+-----------------------------------------*/
+
+@media screen and (max-width: 768px) {
+  .neon_main_txt1 {
+      font-size: 30px;
+    }
+
+  .neon_main_txt2 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .neon_main_txt1 {
+    font-size: 20px;
+  }
+
+  .neon_main_txt2 {
+    font-size: 40px;
   }
 }
 
