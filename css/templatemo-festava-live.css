@@ -263,6 +263,71 @@ strong {
   background-size: cover;
 }
 
+/*---------------------------------------
+  Sponsor SECTION               
+-----------------------------------------*/
+
+.sponsor-card {
+  width: 20%;
+  margin: 0 1%;
+  position: relative;
+  margin-bottom: 15px;
+  background-color: #000;
+}
+
+.sponsor-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  position: relative;
+  background: linear-gradient(0deg, #000, #272727);
+  z-index: 2;
+}
+
+.sponsor-card:before,
+.sponsor-card:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094,
+      #0000ff, #00ff00, #ffff00, #ff0000);
+  background-size: 500%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: 1;
+  animation: steam 30s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 300% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.sponsor-card:after {
+  filter: blur(25px);
+}
+
+@media (max-width: 768px) {
+  .sponsor-card {
+    width: 25%;
+  }
+}
+
+@media (max-width: 576px) {
+  .sponsor-card {
+    width: 30%;
+  }
+}
 
 .section-overlay {
   background-color: var(--dark-color);
