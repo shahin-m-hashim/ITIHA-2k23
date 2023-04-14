@@ -255,6 +255,14 @@ strong {
   background-size: cover;
 }
 
+#section_7 {
+  background-image: url('../images/anime/one-piece-boat.jpg');
+  background-color: #ccc5ed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 
 .section-overlay {
   background-color: var(--dark-color);

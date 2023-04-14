@@ -55,20 +55,21 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            /* padding-top: 130px; */
             position: relative;
         }
 
         .pro-shows-title {
             font-size: 36px;
             font-weight: bold;
-            margin-bottom: 30px;
+            /* margin-bottom: 30px; */
+            color: #fff;
+            padding-top: 10px;
         }
 
         .pro-shows-underline {
             border: none;
             height: 2px;
-            background-color: #000;
+            background-color: #fff;
             width: 100%;
             margin-bottom: 30px;
         }
@@ -77,6 +78,18 @@
             width: 100%;
             height: auto;
             margin-bottom: 20px;
+            border: 1px solid #fff;
+            border-radius: 10px;
+        }
+
+        #pro-show-row {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: hsla(0, 0%, 100%, 0.156);
+            backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
 
         .pro-shows-button {
@@ -89,6 +102,18 @@
             border-radius: 5px;
             cursor: pointer;
             margin-top: -20px;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .pro-shows-button:hover {
+            border-color: #2E8CAE;
+        }
+
+        .pro-shows-button:hover {
+            background-color: #fff;
+            color: #2E8CAE;
         }
 
         @media (min-width: 768px) {
@@ -166,16 +191,16 @@
         </nav>
 
 
-        <section class="pro-shows-section section-padding">
-            <div class="section-overlay"></div>
+        <section class="pro-shows-section section-padding" style="background-color: #f7f7f7;">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 text-center" style="margin-top: 50px;">
-                        <h1 class="pro-shows-title" style="color: #fff;">Pro Shows</h1>
-                        <hr class="pro-shows-underline">
+                    <div class="col-12 text-center"
+                        style="border-radius: 3px; border: 3px solid blue; margin-top: 50px; background-color: red;">
+                        <h1 class="pro-shows-title">Pro Shows</h1>
+                        <!-- <hr class="pro-shows-underline"> -->
                     </div>
                 </div>
-                <div class="row pro-shows-row">
+                <div class="row pro-shows-row" id="pro-show-row">
                     <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
                         <div class="pro-shows-card">
                             <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="pro-shows-image">
@@ -337,11 +362,6 @@
         </div>
     </footer>
 
-    <!--
-
-T e m p l a t e M o
-
--->
     <!-- JAVASCRIPT FILES -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
