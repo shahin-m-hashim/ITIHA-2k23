@@ -291,8 +291,9 @@ strong {
   position: absolute;
   left: -2px;
   top: -2px;
-  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094,
-      #0000ff, #00ff00, #ffff00, #ff0000);
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+  /* background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094,
+        #0000ff, #00ff00, #ffff00, #ff0000); */
   background-size: 500%;
   width: calc(100% + 6px);
   height: calc(100% + 6px);
