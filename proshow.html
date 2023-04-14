@@ -161,31 +161,23 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto me-lg-5 align-items-lg-center">
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_1">Home</a>
+                            <a class="nav-link click-scroll" href="index.html">Home</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_2">About</a>
+                            <a class="nav-link click-scroll" href="index.html#section_4">Schedule</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3">Highlights</a>
+                            <a class="nav-link click-scroll" href="index.html#section_5">Events</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_4">Schedule</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_5">Events</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_6">Contact</a>
+                            <a class="nav-link click-scroll" href="#site-footer" id="c1">Contact</a>
                         </li>
                     </ul>
 
-                    <a href="ticket.html" class="btn custom-btn d-none d-lg-block">Register</a>
+                    <a href="ticket.html" class="btn custom-btn d-none d-lg-block" style="display: none !important;">Register</a>
                 </div>
             </div>
         </nav>
@@ -226,7 +218,7 @@
     </main>
 
 
-    <footer class="site-footer">
+    <footer class="site-footer" id ='site-footer'>
         <div class="site-footer-top">
             <div class="container">
                 <div class="row">
@@ -290,7 +282,7 @@
                         </li>
 
                         <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Contact</a>
+                            <a href="#" class="site-footer-link" id="c1">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -367,6 +359,31 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+                // Add smooth scrolling to my-link
+                $("#c1").on('click', function (event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+
+                        // Store hash
+                        var hash = this.hash;
+
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function () {
+
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+            });
+    </script>
 
 </body>
 

@@ -63,7 +63,9 @@
         .pro-shows-title {
             font-size: 36px;
             font-weight: bold;
-            margin-bottom: 30px;
+            /* margin-bottom: 30px; */
+            color: #fff;
+            padding-top: 10px;
         }
     
         .pro-shows-underline {
@@ -78,8 +80,20 @@
             width: 100%;
             height: auto;
             margin-bottom: 20px;
+            border: 1px solid #fff;
+            border-radius: 10px;
         }
-    
+
+        #pro-show-row {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: hsla(0, 0%, 100%, 0.156);
+            backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
         .pro-shows-button {
             display: block;
             width: 100%;
@@ -90,8 +104,20 @@
             border-radius: 5px;
             cursor: pointer;
             margin-top: -20px;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            margin-bottom: 15px;
         }
-    
+
+        .pro-shows-button:hover {
+            border-color: #2E8CAE;
+        }
+
+        .pro-shows-button:hover {
+            background-color: #fff;
+            color: #2E8CAE;
+        }
+
         @media (min-width: 768px) {
             .pro-shows-section {
                 padding: 100px 0;
@@ -137,31 +163,32 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto me-lg-5 align-items-lg-center">
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_1">Home</a>
+                            <a class="nav-link click-scroll" href="index.html">Home</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_2">About</a>
+                            <a class="nav-link click-scroll" href="#workshop">Workshops</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3">Highlights</a>
+                            <a class="nav-link click-scroll" href="#technical">Technical</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_4">Schedule</a>
+                            <a class="nav-link click-scroll" href="#cultural">Cultural</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_5">Events</a>
+                            <a class="nav-link click-scroll" href="#expo">Expo</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_6">Contact</a>
+                            <a class="nav-link click-scroll" href="#site-footer">Contact</a>
                         </li>
+                        
                     </ul>
 
-                    <a href="ticket.html" class="btn custom-btn d-none d-lg-block">Register</a>
+                    <a href="ticket.html" class="btn custom-btn d-none d-lg-block" style="display: none !important;">Register</a>
                 </div>
             </div>
         </nav>
@@ -169,14 +196,15 @@
 
         <section class="pro-shows-section section-padding">
             <!-- <div class="section-overlay"></div> -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center" style="margin-top: 50px;">
-                        <h1 class="pro-shows-title" style="color: #fff;">WORKSHOPS</h1>
-                        <hr class="pro-shows-underline">
+            <div class="container" id="workshop">
+                <div class="row" style="padding: 0 5px;">
+                    <div class="col-12 text-center"
+                        style="border-radius: 3px; border: 3px solid blue; margin-top: 50px; background-color: #65d806b5;">
+                        <h1 class="pro-shows-title">WORKSHOPS</h1>
+                        <!-- <hr class="pro-shows-underline"> -->
                     </div>
                 </div>
-                <div class="row pro-shows-row">
+                <div class="row pro-shows-row" id="pro-show-row">
                     <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
                         <div class="pro-shows-card">
                             <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="pro-shows-image">
@@ -198,14 +226,15 @@
                 </div>
             </div>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center" style="margin-top: 50px;">
-                        <h1 class="pro-shows-title" style="color: #fff;">TECHNICAL</h1>
-                        <hr class="pro-shows-underline">
+            <div class="container" id="technical">
+                <div class="row" style="padding: 0 5px;">
+                    <div class="col-12 text-center"
+                        style="border-radius: 3px; border: 3px solid blue; margin-top: 50px; background-color: rgba(255, 0, 251, 0.788);">
+                        <h1 class="pro-shows-title">TECHNICAL</h1>
+                        <!-- <hr class="pro-shows-underline"> -->
                     </div>
                 </div>
-                <div class="row pro-shows-row">
+                <div class="row pro-shows-row" id="pro-show-row"> 
                     <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
                         <div class="pro-shows-card">
                             <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="pro-shows-image">
@@ -299,14 +328,15 @@
                 </div>
             </div>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center" style="margin-top: 50px;">
-                        <h1 class="pro-shows-title" style="color: #fff;">CULTURAL</h1>
-                        <hr class="pro-shows-underline">
+            <div class="container" id="cultural">
+                <div class="row" style="padding: 0 5px;">
+                    <div class="col-12 text-center"
+                        style="border-radius: 3px; border: 3px solid blue; margin-top: 50px; background-color: rgb(7, 161, 227);">
+                        <h1 class="pro-shows-title">CULTURAL</h1>
+                        <!-- <hr class="pro-shows-underline"> -->
                     </div>
                 </div>
-                <div class="row pro-shows-row">
+                <div class="row pro-shows-row" id="pro-show-row">
                     <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
                         <div class="pro-shows-card">
                             <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="pro-shows-image">
@@ -365,14 +395,15 @@
                 </div>
             </div>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center" style="margin-top: 50px;">
-                        <h1 class="pro-shows-title" style="color: #fff;">EXPO</h1>
-                        <hr class="pro-shows-underline">
+            <div class="container" id="expo">
+                <div class="row" style="padding: 0 5px;">
+                    <div class="col-12 text-center"
+                        style="border-radius: 3px; border: 3px solid blue; margin-top: 50px; background-color: rgb(237, 149, 7);">
+                        <h1 class="pro-shows-title">EXPO</h1>
+                        <!-- <hr class="pro-shows-underline"> -->
                     </div>
                 </div>
-                <div class="row pro-shows-row">
+                <div class="row pro-shows-row" id="pro-show-row">
                     <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
                         <div class="pro-shows-card">
                             <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="pro-shows-image">
@@ -518,7 +549,7 @@
             </div>
         </div>
 
-        <div class="site-footer-bottom">
+        <div class="site-footer-bottom" id ='site-footer'>
             <div class="container">
                 <div class="row">
 
@@ -555,7 +586,33 @@ T e m p l a t e M o
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
-    <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+                // Add smooth scrolling to all links
+                $("a").on('click', function (event) {
+
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+
+                        // Store hash
+                        var hash = this.hash;
+
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 800, function () {
+
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+            });
+
+    </script>
 
 </body>
 
