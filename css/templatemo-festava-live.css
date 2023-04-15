@@ -456,7 +456,6 @@ strong {
   height: 100%;
 }
 
-
 /*---------------------------------------
   SITE HEADER              
 -----------------------------------------*/
@@ -465,7 +464,6 @@ strong {
   padding-top: 12px;
   padding-bottom: 12px;
 }
-
 
 /*---------------------------------------
   NAVIGATION              
@@ -622,19 +620,19 @@ strong {
 -----------------------------------------*/
 .neon_main_txt1 {
   font-size: 40px;
-  font-family: 'Gang of Three', cursive;
+  /* font-family: 'Gang of Three', cursive;
   text-shadow: 0 0 10px #ff8800, 
   0 0 20px #ff8800, 
   0 0 30px #ff8800, 
   0 0 40px #ff8800, 
   0 0 70px #ff8800, 
   0 0 80px #ff8800, 
-  0 0 100px #ff8800;
+  0 0 100px #ff8800; */
 }
 
 .neon_main_txt2 {
   font-size: 100px;
-  font-family: 'Gang of Three', cursive;
+  /* font-family: 'Gang of Three', cursive;
   color: #00a2ff;
   text-shadow: 0 0 10px #00a2ff,
     0 0 20px #00a2ff,
@@ -642,10 +640,10 @@ strong {
     0 0 40px #00a2ff,
     0 0 70px #00a2ff,
     0 0 80px #00a2ff,
-    0 0 100px #00a2ff;
+    0 0 100px #00a2ff; */
 }
 
-.neon_main_txt2 span {
+/* .neon_main_txt2 span {
   display: inline-block;
   animation: flip 2s ease-in-out infinite alternate;
 }
@@ -698,7 +696,7 @@ strong {
   to {
     transform: rotateY(360deg);
   }
-}
+} */
 
 /*---------------------------------------
   ABOUT              
@@ -1058,9 +1056,16 @@ strong {
   margin-right: 15px;
 }
 
+#riet-footer-logo{
+      margin-left: -10px;
+      width: 365px;
+      height: 80px;
+}
+
 .copyright-text {
   font-size: var(--copyright-font-size);
 }
+
 
 
 /*---------------------------------------
@@ -1113,6 +1118,18 @@ strong {
   }
 }
 
+/*---------------------------------------
+  DESIGN AND DEVELOPMENT             
+-----------------------------------------*/
+
+.development-team
+{
+  font-style: normal;
+  font-size: 25px;
+  font-family: 'bootstrap-icons';
+  font-weight: 550;
+  text-align: center !important;
+}
 
 /*---------------------------------------
   RESPONSIVE STYLES               
@@ -1198,6 +1215,10 @@ strong {
   }
 }
 
+.development-team {
+  font-size: 20px;
+}
+
 /*---------------------------------------
   HERO Section Main TEXT        
 -----------------------------------------*/
@@ -1219,6 +1240,16 @@ strong {
 
   .neon_main_txt2 {
     font-size: 40px;
+  }
+
+  #riet-footer-logo {
+    margin-left: -5px;
+    width: 275px;
+    height: 60px;
+  }
+
+  .development-team {
+    font-size: 13px;
   }
 }
 
