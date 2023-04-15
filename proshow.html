@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ProShow Ticket HTML Form</title>
+    <title>ProShow</title>
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,19 +24,19 @@
     <link href="css/templatemo-festava-live.css" rel="stylesheet">
 
     <style>
-        ::-webkit-scrollbar {
+         ::-webkit-scrollbar {
             width: 10px;
             height: 10px;
             background-color: #F5F5F5;
-            }
-
-        ::-webkit-scrollbar-thumb {
+        }
+        
+         ::-webkit-scrollbar-thumb {
             background-color: #000;
-            }
-
-        ::-webkit-scrollbar-thumb:hover {
+        }
+        
+         ::-webkit-scrollbar-thumb:hover {
             background-color: #555;
-            }
+        }
         
         .navbar {
             position: fixed;
@@ -131,7 +131,7 @@
         <nav class="navbar navbar-expand-lg" style="max-height: 70px ;">
             <div class="container" style="max-height: 70px;">
                 <a class="navbar-brand" href="index.html" style="display:flex;align-items:center;">
-                    <img src="images/logo/ITIHA-23-LOGO-Resize-ORGINAL.png" alt="logo" style="width: 70px; max-height: 70px;">
+                    <img src="images/logo/ITIHA-23-LOGO-Resize-ORGINAL.png" alt="logo" style="width: 63px; height: auto;">
                     <!-- <span style="font-family: 'Comforter Brush', cursive; font-size:40px;">Itiha</span> -->
                 </a>
 
@@ -234,32 +234,7 @@
             <div class="row">
 
                 <div class="col-lg-6 col-12 mb-4 pb-2">
-
-                    <ul class="site-footer-links">
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Home</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">About</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Highlights</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Schedule</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Sponsors</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Contact</a>
-                        </li>
-                    </ul>
+                    <img src="images/logo/Rajadhani_logo_Transparent_BG_1.png" alt="riet-logo" id="riet-footer-logo">
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
@@ -302,9 +277,14 @@
         <div class="site-footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-12 mt-5">
-                        <p class="copyright-text">Copyright © 2023 RIET</p>
+                    <div>
+                        <p class="development-team">Designed & Developed By Shahin M Hashim, Deepika S.R, Ajmal Sajeev, Sreehari A.L, Gautham S.B</p>
                     </div>
+
+                    <div class="col-lg-3 col-12 mt-5" style="width: 100%;">
+                        <p class="copyright-text" style="text-align: center !important;">Copyright © 2023 RIET</p>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -316,25 +296,24 @@
     <script src="js/jquery.sticky.js"></script>
     <script src="js/custom.js"></script>
     <script>
-    $(document).scroll(function () {
-        var offsetSection = $('#site-footer').offset().top - 83;
-        var docScroll = $(document).scrollTop();
-        var docScroll1 = docScroll + 1;
+        $(document).scroll(function() {
+            var offsetSection = $('#site-footer').offset().top - 83;
+            var docScroll = $(document).scrollTop();
+            var docScroll1 = docScroll + 1;
 
-        if (docScroll1 >= offsetSection) {
-            $('#c1').addClass('active');
-            $('#c1').removeClass('inactive');
-        }
-    });
+            if (docScroll1 >= offsetSection) {
+                $('#c1').addClass('active');
+                $('#c1').removeClass('inactive');
+            }
+        });
 
-    $('#c1').click(function (e) {
-        var offsetClick = $('#site-footer').offset().top - 83;
-        e.preventDefault();
-        $('html, body').animate({
-            'scrollTop': offsetClick
-        }, 600)
-    });
-
+        $('#c1').click(function(e) {
+            var offsetClick = $('#site-footer').offset().top - 83;
+            e.preventDefault();
+            $('html, body').animate({
+                'scrollTop': offsetClick
+            }, 600)
+        });
     </script>
 
 </body>
