@@ -748,44 +748,6 @@ strong {
 
 
 /*---------------------------------------
-  TICKET               
------------------------------------------*/
-.ticket-section {
-  background-image: url('../images/anime/Dragon-Ball.jpg');
-  background-color: #704010;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding-top: 130px;
-  position: relative;
-}
-
-.ticket-form {
-  background: var(--white-color);
-  border-radius: var(--border-radius-medium);
-  padding: 50px;
-}
-
-.ticket-form .form-check {
-  position: relative;
-  min-height: 52px;
-  padding-left: 35px;
-}
-
-.ticket-form .form-check .form-check-label {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 12px;
-  margin-left: 35px;
-  width: 100%;
-  height: 100%;
-}
-
-
-/*---------------------------------------
   ARTISTS              
 -----------------------------------------*/
 
