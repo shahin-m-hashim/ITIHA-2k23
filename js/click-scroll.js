@@ -1,7 +1,7 @@
 //jquery-click-scroll
 //by syamsul'isul' Arifin
 
-var sectionArray = [1, 2, 3, 4, 5, 6];
+var sectionArray = [1, 2, 3, 4, 5, 6, 7];
 
 $.each(sectionArray, function(index, value){
           
@@ -34,4 +34,14 @@ $(document).ready(function(){
     $('.navbar-nav .nav-item .nav-link:link').addClass('inactive');    
     $('.navbar-nav .nav-item .nav-link').eq(0).addClass('active');
     $('.navbar-nav .nav-item .nav-link:link').eq(0).removeClass('inactive');
+});
+
+$('a.custom-btn[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if (target.length) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 500);
+    }
 });

@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ProShow Ticket HTML Form</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/templatemo-festava-live.css" rel="stylesheet">
+
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+            background-color: #F5F5F5;
+            }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #000;
+            }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+            }
+        
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: hsla(0, 0%, 100%, 0.156);
+            backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            z-index: 4;
+        }
+        
+        .pro-shows-section {
+            padding: 50px 0;
+            background-image: url('../images/anime/Dragon-Ball.png');
+            background-color: #704010;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+        
+        .pro-shows-title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #fff;
+            padding-top: 10px;
+        }
+        
+        .pro-shows-underline {
+            border: none;
+            height: 2px;
+            background-color: #fff;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        
+        .pro-shows-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border: 1px solid #fff;
+            border-radius: 10px;
+        }
+        
+        #pro-show-row {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: hsla(0, 0%, 100%, 0.156);
+            backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        
+        .pro-shows-button {
+            display: block;
+            width: 100%;
+            background-color: #2E8CAE;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: -20px;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .pro-shows-button:hover {
+            border-color: #2E8CAE;
+        }
+        
+        .pro-shows-button:hover {
+            background-color: #fff;
+            color: #2E8CAE;
+        }
+        
+        @media (min-width: 768px) {
+            .pro-shows-section {
+                padding: 100px 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg" style="max-height: 70px ;">
+            <div class="container" style="max-height: 70px;">
+                <a class="navbar-brand" href="index.html" style="display:flex;align-items:center;">
+                    <img src="images/logo/ITIHA-23-LOGO-Resize-ORGINAL.png" alt="logo" style="width: 70px; max-height: 70px;">
+                    <!-- <span style="font-family: 'Comforter Brush', cursive; font-size:40px;">Itiha</span> -->
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto me-lg-5 align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="index.html#section_4">Schedule</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="index.html#section_5">Events</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#site-footer" id="c1">Contact</a>
+                        </li>
+                    </ul>
+
+                    <a href="ticket.html" class="btn custom-btn d-none d-lg-block" style="display: none !important;">Register</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <section class="pro-shows-section section-padding" style="background-color: #f7f7f7;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center" style="border-radius: 3px; border: 3px solid blue; margin-top: 50px; background-color: red;">
+                        <h1 class="pro-shows-title">Pro Shows</h1>
+                    </div>
+                </div>
+                <div class="row pro-shows-row" id="pro-show-row">
+                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
+                        <div class="pro-shows-card">
+                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="pro-shows-image">
+                            <button class="pro-shows-button">Register</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
+                        <div class="pro-shows-card">
+                            <img src="images/Workshops/w2.jpg" alt="Pro Show 2" class="pro-shows-image">
+                            <button class="pro-shows-button">Register</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
+                        <div class="pro-shows-card">
+                            <img src="images/Workshops/w3.jpg" alt="Pro Show 3" class="pro-shows-image">
+                            <button class="pro-shows-button">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer" id='site-footer'>
+        <div class="site-footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12">
+                        <h2 class="text-white mb-lg-0">Itiha 2023</h2>
+                    </div>
+
+                    <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
+                        <ul class="social-icon d-flex justify-content-lg-end">
+                            <li class="social-icon-item">
+                                <a href="https://www.instagram.com/itihariet/?hl=en" class="social-icon-link" target="_blank">
+                                    <span class="bi-instagram"></span>
+                                </a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="https://www.facebook.com/itihariet/" class="social-icon-link" target="_blank">
+                                    <span class="bi-facebook"></span>
+                                </a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="https://www.youtube.com/@itiha-riet2310" target="_blank" class="social-icon-link">
+                                    <span class="bi-youtube"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-12 mb-4 pb-2">
+
+                    <ul class="site-footer-links">
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Home</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">About</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Highlights</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Schedule</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Sponsors</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                    <h5 class="site-footer-title mb-3">Have a question?</h5>
+
+                    <p class="text-white d-flex mb-1">
+                        <a href="tel: 090-080-0760" class="site-footer-link">
+                            96567 69952
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex">
+                        <a href="mailto:hello@company.com" class="site-footer-link">
+                            itiha@rietedu.in
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
+                    <h5 class="site-footer-title mb-3">Location</h5>
+
+                    <p class="text-white d-flex mt-3 mb-2">
+                        Rajadhani Institute of Engineering & Technology, Rajadhani Hills, Nedumparamdu P O, Nagaroor, Kerala 695102
+                    </p>
+
+                    <a class="link-fx-1 color-contrast-higher mt-3" href="https://goo.gl/maps/HUum3tiocBH4yFDD6" target="_blank">
+                        <span>See On Google Map</span>
+                        <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="16" cy="16" r="15.5"></circle>
+                                <line x1="10" y1="18" x2="16" y2="12"></line>
+                                <line x1="16" y1="12" x2="22" y2="18"></line>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-12 mt-5">
+                        <p class="copyright-text">Copyright © 2023 RIET</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+    $(document).scroll(function () {
+        var offsetSection = $('#site-footer').offset().top - 83;
+        var docScroll = $(document).scrollTop();
+        var docScroll1 = docScroll + 1;
+
+        if (docScroll1 >= offsetSection) {
+            $('#c1').addClass('active');
+            $('#c1').removeClass('inactive');
+        }
+    });
+
+    $('#c1').click(function (e) {
+        var offsetClick = $('#site-footer').offset().top - 83;
+        e.preventDefault();
+        $('html, body').animate({
+            'scrollTop': offsetClick
+        }, 600)
+    });
+
+    </script>
+
+</body>
+
+</html>
