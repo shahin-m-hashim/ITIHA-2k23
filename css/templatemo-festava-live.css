@@ -992,35 +992,6 @@ strong {
   border-radius: var(--border-radius-medium);
 }
 
-
-/*---------------------------------------
-  CUSTOM FORM               
------------------------------------------*/
-/* .custom-form .form-control {
-  color: var(--p-color);
-  margin-bottom: 24px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  outline: none;
-}
-
-.custom-form button[type="submit"] {
-  background: var(--custom-btn-bg-color);
-  border: none;
-  border-radius: var(--border-radius-large);
-  color: var(--white-color);
-  font-size: var(--p-font-size);
-  font-weight: var(--font-weight-medium);
-  transition: all 0.3s;
-  margin-bottom: 0;
-}
-
-.custom-form button[type="submit"]:hover,
-.custom-form button[type="submit"]:focus {
-  background: var(--custom-btn-bg-hover-color);
-  border-color: transparent;
-} */
-
 /*---------------------------------------
   GOOGLE EMBEDDED MAP            
 -----------------------------------------*/

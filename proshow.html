@@ -24,19 +24,19 @@
     <link href="css/templatemo-festava-live.css" rel="stylesheet">
 
     <style>
-         ::-webkit-scrollbar {
+        ::-webkit-scrollbar {
             width: 10px;
             height: 10px;
             background-color: #F5F5F5;
-        }
-        
-         ::-webkit-scrollbar-thumb {
+            }
+
+        ::-webkit-scrollbar-thumb {
             background-color: #000;
-        }
-        
-         ::-webkit-scrollbar-thumb:hover {
+            }
+
+        ::-webkit-scrollbar-thumb:hover {
             background-color: #555;
-        }
+            }
         
         .navbar {
             position: fixed;
@@ -61,7 +61,6 @@
         .pro-shows-title {
             font-size: 36px;
             font-weight: bold;
-            /* margin-bottom: 30px; */
             color: #fff;
             padding-top: 10px;
         }
@@ -129,22 +128,6 @@
 
     <main>
 
-        <!-- <header class="site-header">
-                <div class="container">
-                    <div class="row">
-                        
-                        <div class="col-lg-12 col-12 d-flex flex-wrap">
-                            <p class="d-flex me-4 mb-0">
-                                <i class="bi-person custom-icon me-2"></i>
-                                <strong class="text-dark">Welcome to Music Festival 2023</strong>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </header> -->
-
-
         <nav class="navbar navbar-expand-lg" style="max-height: 70px ;">
             <div class="container" style="max-height: 70px;">
                 <a class="navbar-brand" href="index.html" style="display:flex;align-items:center;">
@@ -186,7 +169,6 @@
                 <div class="row">
                     <div class="col-12 text-center" style="border-radius: 3px; border: 3px solid blue; margin-top: 50px; background-color: red;">
                         <h1 class="pro-shows-title">Pro Shows</h1>
-                        <!-- <hr class="pro-shows-underline"> -->
                     </div>
                 </div>
                 <div class="row pro-shows-row" id="pro-show-row">
@@ -252,7 +234,6 @@
             <div class="row">
 
                 <div class="col-lg-6 col-12 mb-4 pb-2">
-                    <!-- <h5 class="site-footer-title mb-3">Links</h5> -->
 
                     <ul class="site-footer-links">
                         <li class="site-footer-link-item">
@@ -321,26 +302,9 @@
         <div class="site-footer-bottom">
             <div class="container">
                 <div class="row">
-
                     <div class="col-lg-3 col-12 mt-5">
                         <p class="copyright-text">Copyright © 2023 RIET</p>
                     </div>
-
-                    <!-- <div class="col-lg-8 col-12 mt-lg-5">
-                                <ul class="site-footer-links">
-                                    <li class="site-footer-link-item">
-                                        <a href="#" class="site-footer-link">Terms &amp; Conditions</a>
-                                    </li>
-    
-                                    <li class="site-footer-link-item">
-                                        <a href="#" class="site-footer-link">Privacy Policy</a>
-                                    </li>
-    
-                                    <li class="site-footer-link-item">
-                                        <a href="#" class="site-footer-link">Your Feedback</a>
-                                    </li>
-                                </ul>
-                            </div> -->
                 </div>
             </div>
         </div>
@@ -352,20 +316,25 @@
     <script src="js/jquery.sticky.js"></script>
     <script src="js/custom.js"></script>
     <script>
-        $(function() {
-            $('a[href*="#"]:not([href="#"])').click(function() {
-                if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html, body').animate({
-                            scrollTop: target.offset().top
-                        }, 800);
-                        return false;
-                    }
-                }
-            });
-        });
+    $(document).scroll(function () {
+        var offsetSection = $('#site-footer').offset().top - 83;
+        var docScroll = $(document).scrollTop();
+        var docScroll1 = docScroll + 1;
+
+        if (docScroll1 >= offsetSection) {
+            $('#c1').addClass('active');
+            $('#c1').removeClass('inactive');
+        }
+    });
+
+    $('#c1').click(function (e) {
+        var offsetClick = $('#site-footer').offset().top - 83;
+        e.preventDefault();
+        $('html, body').animate({
+            'scrollTop': offsetClick
+        }, 600)
+    });
+
     </script>
 
 </body>

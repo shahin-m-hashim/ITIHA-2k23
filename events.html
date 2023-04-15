@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Events Ticket HTML Form</title>
+    <title>Itiha Events</title>
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,19 +24,19 @@
     <link href="css/templatemo-festava-live.css" rel="stylesheet">
 
     <style>
-         ::-webkit-scrollbar {
+        ::-webkit-scrollbar {
             width: 10px;
             height: 10px;
             background-color: #F5F5F5;
-        }
-        
-         ::-webkit-scrollbar-thumb {
+            }
+
+        ::-webkit-scrollbar-thumb {
             background-color: #000;
-        }
-        
-         ::-webkit-scrollbar-thumb:hover {
+            }
+
+        ::-webkit-scrollbar-thumb:hover {
             background-color: #555;
-        }
+            }
         
         .navbar {
             position: fixed;
@@ -48,18 +48,13 @@
             z-index: 4;
         }
         
-        .pro-shows-section {
+        .event-section {
             padding: 50px 0;
-            /* background-image: url('../images/anime/Dragon-Ball.jpg'); */
             background: linear-gradient(to right, #7F7FD5, #91EAE4);
-            /* background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover; */
-            /* padding-top: 130px; */
             position: relative;
         }
         
-        .pro-shows-title {
+        .event-title {
             font-size: 36px;
             font-weight: bold;
             /* margin-bottom: 30px; */
@@ -67,15 +62,7 @@
             padding-top: 10px;
         }
         
-        .pro-shows-underline {
-            border: none;
-            height: 2px;
-            background-color: #000;
-            width: 100%;
-            margin-bottom: 30px;
-        }
-        
-        .pro-shows-image {
+        .event-image {
             width: 100%;
             height: auto;
             margin-bottom: 20px;
@@ -83,7 +70,7 @@
             border-radius: 10px;
         }
         
-        #pro-show-row {
+        #event-row {
             border: 1px solid #ddd;
             border-radius: 10px;
             margin-bottom: 30px;
@@ -93,7 +80,7 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
         
-        .pro-shows-button {
+        .event-button {
             display: block;
             width: 100%;
             background-color: #2E8CAE;
@@ -108,17 +95,17 @@
             margin-bottom: 15px;
         }
         
-        .pro-shows-button:hover {
+        .event-button:hover {
             border-color: #2E8CAE;
         }
         
-        .pro-shows-button:hover {
+        .event-button:hover {
             background-color: #fff;
             color: #2E8CAE;
         }
         
         @media (min-width: 768px) {
-            .pro-shows-section {
+            .event-section {
                 padding: 100px 0;
             }
         }
@@ -129,22 +116,6 @@
 <body>
 
     <main>
-
-        <!-- <header class="site-header">
-                <div class="container">
-                    <div class="row">
-                        
-                        <div class="col-lg-12 col-12 d-flex flex-wrap">
-                            <p class="d-flex me-4 mb-0">
-                                <i class="bi-person custom-icon me-2"></i>
-                                <strong class="text-dark">Welcome to Music Festival 2023</strong>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </header> -->
-
 
         <nav class="navbar navbar-expand-lg" style="max-height: 70px ;">
             <div class="container" style="max-height: 70px;">
@@ -191,32 +162,106 @@
         </nav>
 
 
-        <section class="pro-shows-section section-padding">
-            <!-- <div class="section-overlay"></div> -->
+        <section class="event-section section-padding">
             <div class="container" id="workshop">
                 <div class="row" style="padding: 0 5px;">
                     <div class="col-12 text-center" style="border-radius: 3px; border: 3px solid blue; margin-top: 50px; background-color: #65d806b5;">
-                        <h1 class="pro-shows-title">WORKSHOPS</h1>
-                        <!-- <hr class="pro-shows-underline"> -->
+                        <h1 class="event-title">WORKSHOPS</h1>
                     </div>
                 </div>
-                <div class="row pro-shows-row" id="pro-show-row">
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
+                <div class="row event-row" id="event-row">
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="event-image">
+                            <button class="event-button">Register</button>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Workshops/w2.jpg" alt="Pro Show 2" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Workshops/w2.jpg" alt="Pro Show 2" class="event-image">
+                            <button class="event-button">Register</button>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Workshops/w3.jpg" alt="Pro Show 3" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Workshops/w3.jpg" alt="Pro Show 3" class="event-image">
+                            <button class="event-button">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" id="cultural">
+                <div class="row" style="padding: 0 5px;">
+                    <div class="col-12 text-center" style="border-radius: 3px; border: 3px solid blue; margin-top: 50px; background-color: rgba(255, 0, 251, 0.788);">
+                        <h1 class="event-title">CULTURAL</h1>
+                    </div>
+                </div>
+                <div class="row event-row" id="event-row">
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Cultural/FASHION SHOW PAGE 1.jpg" alt="Pro Show 1" class="event-image">
+                            <button class="event-button">Register</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Cultural/CHOREO NIGHT PAGE 1.jpg" alt="Pro Show 2" class="event-image">
+                            <button class="event-button">Register</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Cultural/MUSIC BAND PAGE 1.jpg" alt="Pro Show 3" class="event-image">
+                            <button class="event-button">Register</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Cultural/DANCE BATTLE PAGE 1.jpg" alt="Pro Show 1" class="event-image">
+                            <button class="event-button">Register</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Cultural/DUO CHOREO PAGE 1.jpg" alt="Pro Show 1" class="event-image">
+                            <button class="event-button">Register</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Cultural/MIME PAGE 1.jpg" alt="Pro Show 1" class="event-image">
+                            <button class="event-button">Register</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Cultural/UNPLUGGED PAGE 1.jpg" alt="Pro Show 1" class="event-image">
+                            <button class="event-button">Register</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Cultural/MIMCRY PAGE 1.jpg" alt="Pro Show 1" class="event-image">
+                            <button class="event-button">Register</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Cultural/WESTERN SOLO PAGE 1.jpg" alt="Pro Show 2" class="event-image">
+                            <button class="event-button">Register</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Cultural/STAND UP PAGE 1.jpg" alt="Pro Show 3" class="event-image">
+                            <button class="event-button">Register</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Cultural/SPOT CHOREO PAGE 1.jpg" alt="Pro Show 1" class="event-image">
+                            <button class="event-button">Register</button>
                         </div>
                     </div>
                 </div>
@@ -224,165 +269,63 @@
 
             <div class="container" id="technical">
                 <div class="row" style="padding: 0 5px;">
-                    <div class="col-12 text-center" style="border-radius: 3px; border: 3px solid blue; margin-top: 50px; background-color: rgba(255, 0, 251, 0.788);">
-                        <h1 class="pro-shows-title">CULTURAL</h1>
-                        <!-- <hr class="pro-shows-underline"> -->
-                    </div>
-                </div>
-                <div class="row pro-shows-row" id="pro-show-row">
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Cultural/FASHION SHOW PAGE 1.jpg" alt="Pro Show 1" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Cultural/CHOREO NIGHT PAGE 1.jpg" alt="Pro Show 2" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Cultural/MUSIC BAND PAGE 1.jpg" alt="Pro Show 3" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Cultural/DANCE BATTLE PAGE 1.jpg" alt="Pro Show 1" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Cultural/DUO CHOREO PAGE 1.jpg" alt="Pro Show 1" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Cultural/MIME PAGE 1.jpg" alt="Pro Show 1" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Cultural/UNPLUGGED PAGE 1.jpg" alt="Pro Show 1" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Cultural/MIMCRY PAGE 1.jpg" alt="Pro Show 1" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Cultural/WESTERN SOLO PAGE 1.jpg" alt="Pro Show 2" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Cultural/STAND UP PAGE 1.jpg" alt="Pro Show 3" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Cultural/SPOT CHOREO PAGE 1.jpg" alt="Pro Show 1" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
-                        </div>
-                    </div>
-                    <!-- <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-
-            <div class="container" id="cultural">
-                <div class="row" style="padding: 0 5px;">
                     <div class="col-12 text-center" style="border-radius: 3px; border: 3px solid blue; margin-top: 50px; background-color: rgb(7, 161, 227);">
-                        <h1 class="pro-shows-title">TECHNICAL</h1>
-                        <!-- <hr class="pro-shows-underline"> -->
+                        <h1 class="event-title">TECHNICAL</h1>
                     </div>
                 </div>
-                <div class="row pro-shows-row" id="pro-show-row">
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
+                <div class="row event-row" id="event-row">
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="event-image">
+                            <button class="event-button">Register</button>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Workshops/w2.jpg" alt="Pro Show 2" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Workshops/w2.jpg" alt="Pro Show 2" class="event-image">
+                            <button class="event-button">Register</button>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Workshops/w3.jpg" alt="Pro Show 3" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Workshops/w3.jpg" alt="Pro Show 3" class="event-image">
+                            <button class="event-button">Register</button>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="event-image">
+                            <button class="event-button">Register</button>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Workshops/w2.jpg" alt="Pro Show 2" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Workshops/w2.jpg" alt="Pro Show 2" class="event-image">
+                            <button class="event-button">Register</button>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Workshops/w3.jpg" alt="Pro Show 3" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Workshops/w3.jpg" alt="Pro Show 3" class="event-image">
+                            <button class="event-button">Register</button>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="event-image">
+                            <button class="event-button">Register</button>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="event-image">
+                            <button class="event-button">Register</button>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="event-image">
+                            <button class="event-button">Register</button>
                         </div>
                     </div>
 
@@ -392,39 +335,38 @@
             <div class="container" id="expo">
                 <div class="row" style="padding: 0 5px;">
                     <div class="col-12 text-center" style="border-radius: 3px; border: 3px solid blue; margin-top: 50px; background-color: rgb(237, 149, 7);">
-                        <h1 class="pro-shows-title">EXPO</h1>
-                        <!-- <hr class="pro-shows-underline"> -->
+                        <h1 class="event-title">EXPO</h1>
                     </div>
                 </div>
-                <div class="row pro-shows-row" id="pro-show-row">
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
+                <div class="row event-row" id="event-row">
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="event-image">
+                            <button class="event-button">Register</button>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Workshops/w2.jpg" alt="Pro Show 2" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Workshops/w2.jpg" alt="Pro Show 2" class="event-image">
+                            <button class="event-button">Register</button>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Workshops/w3.jpg" alt="Pro Show 3" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Workshops/w3.jpg" alt="Pro Show 3" class="event-image">
+                            <button class="event-button">Register</button>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="event-image">
+                            <button class="event-button">Register</button>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12 pro-shows-col">
-                        <div class="pro-shows-card">
-                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="pro-shows-image">
-                            <button class="pro-shows-button">Register</button>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="event-image">
+                            <button class="event-button">Register</button>
                         </div>
                     </div>
                 </div>
@@ -471,7 +413,6 @@
             <div class="row">
 
                 <div class="col-lg-6 col-12 mb-4 pb-2">
-                    <!-- <h5 class="site-footer-title mb-3">Links</h5> -->
 
                     <ul class="site-footer-links">
                         <li class="site-footer-link-item">
@@ -540,26 +481,9 @@
         <div class="site-footer-bottom">
             <div class="container">
                 <div class="row">
-
                     <div class="col-lg-3 col-12 mt-5">
                         <p class="copyright-text">Copyright © 2023 RIET</p>
                     </div>
-
-                    <!-- <div class="col-lg-8 col-12 mt-lg-5">
-                                <ul class="site-footer-links">
-                                    <li class="site-footer-link-item">
-                                        <a href="#" class="site-footer-link">Terms &amp; Conditions</a>
-                                    </li>
-    
-                                    <li class="site-footer-link-item">
-                                        <a href="#" class="site-footer-link">Privacy Policy</a>
-                                    </li>
-    
-                                    <li class="site-footer-link-item">
-                                        <a href="#" class="site-footer-link">Your Feedback</a>
-                                    </li>
-                                </ul>
-                            </div> -->
                 </div>
             </div>
         </div>
@@ -569,30 +493,20 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
+    <script src="js/custom.js"></script>
     <script>
-        $(function() {
-            $('a[href*="#"]:not([href="#"])').click(function() {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html, body').animate({
-                            scrollTop: target.offset().top
-                        }, 800, function() {
-                            var $target = $(target);
-                            $target.focus();
-                            if ($target.is(":focus")) {
-                                return false;
-                            } else {
-                                $target.attr('tabindex', '-1');
-                                $target.focus();
-                            };
-                        });
-                        return false;
-                    }
-                }
-            });
-        });
+    $('a[href^="#"]').on('click', function (event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 800);
+            // Add active class to clicked link
+            $('a[href^="#"]').removeClass('active');
+            $(this).addClass('active');
+        }
+    });
     </script>
 
 </body>
