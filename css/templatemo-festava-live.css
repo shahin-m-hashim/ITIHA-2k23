@@ -516,6 +516,7 @@ strong {
   width: 30px;
   height: 35px;
   outline: none;
+  margin-bottom: 10px;
 }
 
 .navbar-toggler:focus {
