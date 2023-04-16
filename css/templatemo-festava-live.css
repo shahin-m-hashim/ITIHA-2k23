@@ -618,89 +618,6 @@ strong {
 }
 
 /*---------------------------------------
-  HERO Section Main TEXT        
------------------------------------------*/
-/* .neon_main_txt1 {
-  font-size: 40px;
-  font-family: 'Gang of Three', cursive;
-  text-shadow: 0 0 10px #ff8800, 
-  0 0 20px #ff8800, 
-  0 0 30px #ff8800, 
-  0 0 40px #ff8800, 
-  0 0 70px #ff8800, 
-  0 0 80px #ff8800, 
-  0 0 100px #ff8800;
-}
-
-.neon_main_txt2 {
-  font-size: 100px;
-  font-family: 'Gang of Three', cursive;
-  color: #00a2ff;
-  text-shadow: 0 0 10px #00a2ff,
-    0 0 20px #00a2ff,
-    0 0 30px #00a2ff,
-    0 0 40px #00a2ff,
-    0 0 70px #00a2ff,
-    0 0 80px #00a2ff,
-    0 0 100px #00a2ff;
-}
-
-.neon_main_txt2 span {
-  display: inline-block;
-  animation: flip 2s ease-in-out infinite alternate;
-}
-
-.neon_main_txt2 span:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-.neon_main_txt2 span:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.neon_main_txt2 span:nth-child(3) {
-  animation-delay: 0.3s;
-}
-
-.neon_main_txt2 span:nth-child(4) {
-  animation-delay: 0.4s;
-}
-
-.neon_main_txt2 span:nth-child(5) {
-  animation-delay: 0.5s;
-}
-
-.neon_main_txt2 span:nth-child(6) {
-  animation-delay: 0.6s;
-}
-
-.neon_main_txt2 span:nth-child(7) {
-  animation-delay: 0.7s;
-}
-
-.neon_main_txt2 span:nth-child(8) {
-  animation-delay: 0.8s;
-}
-
-.neon_main_txt2 span:nth-child(9) {
-  animation-delay: 0.9s;
-}
-
-.neon_main_txt2 span:nth-child(10) {
-  animation-delay: 1s;
-}
-
-@keyframes flip {
-  from {
-    transform: rotateY(0deg);
-  }
-
-  to {
-    transform: rotateY(360deg);
-  }
-} */
-
-/*---------------------------------------
   ABOUT              
 -----------------------------------------*/
 .about-section {
@@ -840,6 +757,14 @@ strong {
 .schedule-table td {
   border-bottom-color: #363a3e;
   padding: 30px;
+  width: 16.67%;
+}
+
+tbody, td, tfoot, th, thead, tr
+{
+  border-color: rgb(17, 17, 17);
+  border-style: solid;
+  border-width: 1px;
 }
 
 .schedule-table tr:last-child th,
@@ -860,16 +785,50 @@ strong {
   border-right-color: transparent;
 }
 
+.schedule-table .col-1-bg-img
+{
+    background-image: url('../images/table/tb2.jpg');
+    /* background-color: #dbe1e2; */
+}
+
+.schedule-table .col-2-bg-img {
+  background-image: url('../images/table/tb1.jpg');
+  /* background-color: #dbe1e2; */
+}
+
+.schedule-table .col-3-bg-img {
+  background-image: url('../images/table/tb3.jpg');
+  /* background-color: #dbe1e2; */
+}
+
+.schedule-table .col-4-bg-img {
+  background-image: url('../images/table/tb4.png');
+  /* background-color: #dbe1e2; */
+}
+
+.schedule-table .col-5-bg-img {
+  background-image: url('../images/table/tb2.jpg');
+  /* background-color: #dbe1e2; */
+}
+
+.schedule-table .col-6-bg-img {
+  background-image: url('../images/table/tb1.jpg');
+  /* background-color: #dbe1e2; */
+}
+
 .schedule-table .pop-background-image {
-  background-image: url('../images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg');
+  /* background-image: url('../images/table/tb2.jpg'); */
+  background-color: #dbe1e2;
 }
 
 .schedule-table .rock-background-image {
-  background-image: url('../images/artists/abstral-official-bdlMO9z5yco-unsplash.jpg');
+  background-image: url('../images/table/tb1.jpg');
+  /* background-color: #dbe1e2; */
 }
 
 .schedule-table .country-background-image {
-  background-image: url('../images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg');
+  background-image: url('../images/table/tb1.jpg');
+  /* background-color: #dbe1e2; */
 }
 
 .table-background-image-wrap {
@@ -1149,6 +1108,10 @@ strong {
     padding: 0;
   }
 
+  .neon_main_txt2 {
+    margin-bottom: auto !important;
+  }
+
   .hero-section {
     padding-top: 150px;
   }
@@ -1189,29 +1152,12 @@ strong {
   }
 }
 
-
 /*---------------------------------------
   HERO Section Main TEXT        
 -----------------------------------------*/
 
-@media screen and (max-width: 768px) {
-  .neon_main_txt1 {
-      font-size: 30px;
-    }
-
-  .neon_main_txt2 {
-    font-size: 60px;
-  }
-}
 
 @media screen and (max-width: 480px) {
-  .neon_main_txt1 {
-    font-size: 20px;
-  }
-
-  .neon_main_txt2 {
-    font-size: 40px;
-  }
 
   #riet-footer-logo {
     margin-left: -5px;
