@@ -621,19 +621,19 @@ strong {
 -----------------------------------------*/
 .neon_main_txt1 {
   font-size: 40px;
-  /* font-family: 'Gang of Three', cursive;
+  font-family: 'Gang of Three', cursive;
   text-shadow: 0 0 10px #ff8800, 
   0 0 20px #ff8800, 
   0 0 30px #ff8800, 
   0 0 40px #ff8800, 
   0 0 70px #ff8800, 
   0 0 80px #ff8800, 
-  0 0 100px #ff8800; */
+  0 0 100px #ff8800;
 }
 
 .neon_main_txt2 {
   font-size: 100px;
-  /* font-family: 'Gang of Three', cursive;
+  font-family: 'Gang of Three', cursive;
   color: #00a2ff;
   text-shadow: 0 0 10px #00a2ff,
     0 0 20px #00a2ff,
@@ -641,7 +641,7 @@ strong {
     0 0 40px #00a2ff,
     0 0 70px #00a2ff,
     0 0 80px #00a2ff,
-    0 0 100px #00a2ff; */
+    0 0 100px #00a2ff;
 }
 
 /* .neon_main_txt2 span {
@@ -1176,11 +1176,18 @@ strong {
   .ticket-form {
     padding: 30px;
   }
+
+  .development-team {
+    font-size: 20px;
+  }
+  
+  #footer-icons
+  {
+    margin-top: 10px;
+    padding-left: 8px;
+  }
 }
 
-.development-team {
-  font-size: 20px;
-}
 
 /*---------------------------------------
   HERO Section Main TEXT        
