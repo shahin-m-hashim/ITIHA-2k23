@@ -497,7 +497,8 @@ strong {
   display: inline-block;
   color: var(--white-color);
   font-size: var(--p-font-size);
-  font-weight: var(--font-weight-normal);
+  font-weight: bolder;
+  text-shadow: 0px 3px 5px rgba(255, 0, 0, 0.5);
   position: relative;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -505,7 +506,7 @@ strong {
 
 .navbar-nav .nav-link.active, 
 .navbar-nav .nav-link:hover {
-  color: #81D3EE;
+  color: #00ffee;
 }
 
 .navbar-toggler {
@@ -580,9 +581,9 @@ strong {
 -----------------------------------------*/
 
 .sticky-wrapper.is-sticky .navbar {
-  background-color: hsla(0, 0%, 100%, 0.156);
-  backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: hsla(0, 0%, 100%, 0.15);
+  backdrop-filter: blur(5px) saturate(180%) contrast(75%) brightness(120%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 /*---------------------------------------
@@ -619,7 +620,7 @@ strong {
 /*---------------------------------------
   HERO Section Main TEXT        
 -----------------------------------------*/
-.neon_main_txt1 {
+/* .neon_main_txt1 {
   font-size: 40px;
   font-family: 'Gang of Three', cursive;
   text-shadow: 0 0 10px #ff8800, 
@@ -644,7 +645,7 @@ strong {
     0 0 100px #00a2ff;
 }
 
-/* .neon_main_txt2 span {
+.neon_main_txt2 span {
   display: inline-block;
   animation: flip 2s ease-in-out infinite alternate;
 }
@@ -987,7 +988,7 @@ strong {
 }
 
 .site-footer-top {
-  background-color: var(--secondary-color);
+  background-color: #2E8CAE;
   background-image: url('../images/nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg');
   background-repeat: no-repeat;
   margin-bottom: 70px;
@@ -1001,7 +1002,7 @@ strong {
 }
 
 .site-footer-title {
-  color: var(--primary-color); 
+  color: #81D3EE;
 }
 
 .site-footer-link,
@@ -1046,7 +1047,7 @@ strong {
 }
 
 .social-icon-link {
-  background: #2E8CAE;
+  background: #7777f5;
   border-radius: var(--border-radius-large);
   color: var(--white-color);
   font-size: var(--copyright-font-size);
@@ -1060,7 +1061,7 @@ strong {
 }
 
 .social-icon-link:hover {
-  background: var(--primary-color);
+  background: #665863;
   color: var(--white-color);
 }
 
@@ -1130,13 +1131,13 @@ strong {
   
   .navbar {
     background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
 
   .navbar-expand-lg .navbar-nav {
     background-color: rgb(169 144 144 / 70%);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 5px;
   }
 
