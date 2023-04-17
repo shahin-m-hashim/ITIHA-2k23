@@ -762,21 +762,17 @@ strong {
 
 .schedule-table th{
   width:10%;
+  background-image: url('../images/table/tb-head.jpg');
 }
 tbody, td, tfoot, th, thead, tr
 {
   border-color: rgb(17, 17, 17);
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
 }
 
 .schedule-table tr:last-child th,
 .schedule-table tr:last-child td {
-  border-bottom-color: transparent;
-}
-
-.schedule-table thead th {
-  /* border-right: 1px solid #c7460a; */
   border-bottom-color: transparent;
 }
 
@@ -790,48 +786,13 @@ tbody, td, tfoot, th, thead, tr
 
 .schedule-table .col-1-bg-img
 {
-    /* background-image: url('../images/table/tb2.jpg'); */
-    background-color: #2ea6bc;
+    background-image: url('../images/table/tb-col1.jpg');
+    /* background-color: #2ea6bc; */
 }
 
-.schedule-table .col-2-bg-img {
-  /* background-image: url('../images/table/tb_img.jpg'); */
-  background-color: #76b0bc;
-}
-
-.schedule-table .col-3-bg-img {
-  background-image: url('../images/table/tb3.jpg');
-  /* background-color: #dbe1e2; */
-}
-
-.schedule-table .col-4-bg-img {
-  background-image: url('../images/table/tb4.png');
-  /* background-color: #dbe1e2; */
-}
-
-.schedule-table .col-5-bg-img {
-  background-image: url('../images/table/tb2.jpg');
-  /* background-color: #dbe1e2; */
-}
-
-.schedule-table .col-6-bg-img {
-  background-image: url('../images/table/tb1.jpg');
-  /* background-color: #dbe1e2; */
-}
-
-.schedule-table .pop-background-image {
-  /* background-image: url('../images/table/tb2.jpg'); */
-  background-color: #dbe1e2;
-}
-
-.schedule-table .rock-background-image {
-  background-image: url('../images/table/tb1.jpg');
-  /* background-color: #dbe1e2; */
-}
-
-.schedule-table .country-background-image {
-  background-image: url('../images/table/tb1.jpg');
-  /* background-color: #dbe1e2; */
+.col-2-bg-img,.col-3-bg-img,.col-4-bg-img,.col-5-bg-img,.col-6-bg-img{
+  background-image: url('../images/table/tb-main-col.jpg');
+  /* background-color: #76b0bc; */
 }
 
 .table-background-image-wrap {
