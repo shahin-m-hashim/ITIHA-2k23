@@ -257,7 +257,7 @@ strong {
 }
 
 #section_7 {
-  background-image: url('../images/anime/one-piece-boat.jpg');
+  background-image: url('../images/anime/one-piece-fire.jpg');
   background-color: #ccc5ed;
   background-repeat: no-repeat;
   background-position: center;
@@ -270,7 +270,7 @@ strong {
 
 .sponsor-card {
   width: 20%;
-  height: 25%;
+  height: 35%;
   margin: 0 1%;
   position: relative;
   margin-bottom: 15px;
@@ -1016,6 +1016,7 @@ tbody, td, tfoot, th, thead, tr
   font-family: 'bootstrap-icons';
   font-weight: 550;
   text-align: center !important;
+  color: #858181;
 }
 
 /*---------------------------------------
