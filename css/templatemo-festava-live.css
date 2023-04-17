@@ -46,7 +46,8 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #000;
+  border-radius: 10px;
+  background-color: #727371;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -101,7 +102,7 @@ h5 {
 
 h6 {
   font-size: var(--h6-font-size);
-}
+}zzz
 
 p {
   color: var(--p-color);
@@ -749,10 +750,9 @@ strong {
 }
 
 .schedule-table thead th {
-  background-color: var(--secondary-color);
+  background-color: #2E8CAE;
 }
 
-.schedule-table th,
 .schedule-table tr,
 .schedule-table td {
   border-bottom-color: #363a3e;
@@ -760,6 +760,9 @@ strong {
   width: 16.67%;
 }
 
+.schedule-table th{
+  width:10%;
+}
 tbody, td, tfoot, th, thead, tr
 {
   border-color: rgb(17, 17, 17);
@@ -773,7 +776,7 @@ tbody, td, tfoot, th, thead, tr
 }
 
 .schedule-table thead th {
-  border-right: 1px solid #c7460a;
+  /* border-right: 1px solid #c7460a; */
   border-bottom-color: transparent;
 }
 
@@ -787,13 +790,13 @@ tbody, td, tfoot, th, thead, tr
 
 .schedule-table .col-1-bg-img
 {
-    background-image: url('../images/table/tb2.jpg');
-    /* background-color: #dbe1e2; */
+    /* background-image: url('../images/table/tb2.jpg'); */
+    background-color: #2ea6bc;
 }
 
 .schedule-table .col-2-bg-img {
-  background-image: url('../images/table/tb1.jpg');
-  /* background-color: #dbe1e2; */
+  /* background-image: url('../images/table/tb_img.jpg'); */
+  background-color: #76b0bc;
 }
 
 .schedule-table .col-3-bg-img {
