@@ -23,6 +23,10 @@
 
     <link href="css/templatemo-festava-live.css" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
+
     <style>
          ::-webkit-scrollbar {
             width: 10px;
@@ -31,7 +35,8 @@
         }
         
          ::-webkit-scrollbar-thumb {
-            background-color: #000;
+            border-radius: 10px;
+            background-color: #727371;
         }
         
          ::-webkit-scrollbar-thumb:hover {
@@ -42,22 +47,27 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background-color: hsla(0, 0%, 100%, 0.156);
-            backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            z-index: 4;
+            background-color: hsla(0, 0%, 100%, 0.15);
+            backdrop-filter: blur(5px) saturate(180%) contrast(75%) brightness(120%);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+            /* z-index: 4; */
         }
         
         .event-section {
             padding: 50px 0;
-            background: linear-gradient(to right, #7F7FD5, #91EAE4);
             position: relative;
+            /* background: linear-gradient(to right, #7F7FD5, #25e2d6);
+            backdrop-filter: blur(5px) saturate(160%) contrast(45%) brightness(140%);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);            */
+            background-image: url('../images/anime/one-piece-boat.jpg');
+            /* background-repeat: repeat; */
+            /* background-position: center; */
+            background-size: contain;
         }
         
         .event-title {
             font-size: 36px;
             font-weight: bold;
-            /* margin-bottom: 30px; */
             color: #fff;
             padding-top: 10px;
         }
@@ -83,7 +93,7 @@
         .event-button {
             display: block;
             width: 100%;
-            background-color: #2E8CAE;
+            background-color: #53a0ba;
             color: #fff;
             padding: 10px 20px;
             border: none;
@@ -96,14 +106,23 @@
         }
         
         .event-button:hover {
-            border-color: #0fc4d5;
-            background-color: #81D3EE;
+            border-color: #4e0fd5;
+            background-color: #18a1d3;
             /* color: #2E8CAE; */
         }
         
         @media (min-width: 768px) {
             .event-section {
                 padding: 100px 0;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            #workshop,
+            #cultural,
+            #technical,
+            #expo {
+                width: 90% !important;
             }
         }
     </style>
@@ -118,7 +137,7 @@
             <div class="container" style="max-height: 70px;">
                 <a class="navbar-brand" href="index.html" style="display:flex;align-items:center;">
                     <img src="images/logo/ITIHA-23-LOGO-Resize-ORGINAL.png" alt="logo" style="width: 63px; height: auto;">
-                    <!-- <span style="font-family: 'Comforter Brush', cursive; font-size:40px;">Itiha</span> -->
+                    <img src="images/itiha text/itiha.png" alt="logo" style="width: 70px; height: auto; padding-top: 8px;">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -127,33 +146,33 @@
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto me-lg-5 align-items-lg-center">
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="index.html">Home</a>
+                        <li class="nav-item active">
+                            <a class="nav-link click-scroll" href="index.html" style="font-family: 'Capriola', sans-serif;">Home</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#workshop">Workshops</a>
+                        <li class="nav-item active">
+                            <a class="nav-link click-scroll" href="#workshop" style="font-family: 'Capriola', sans-serif;">Workshops</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#cultural">Cultural</a>
+                        <li class="nav-item active">
+                            <a class="nav-link click-scroll" href="#cultural" style="font-family: 'Capriola', sans-serif;">Cultural</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#technical">Technical</a>
+                        <li class="nav-item active">
+                            <a class="nav-link click-scroll" href="#technical" style="font-family: 'Capriola', sans-serif;">Technical</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#expo">Expo</a>
+                        <li class="nav-item active">
+                            <a class="nav-link click-scroll" href="#expo" style="font-family: 'Capriola', sans-serif;">Expo</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#site-footer">Contact</a>
+                        <li class="nav-item active">
+                            <a class="nav-link click-scroll" href="#site-footer" style="font-family: 'Capriola', sans-serif;">Contact</a>
                         </li>
 
                     </ul>
 
-                    <a href="ticket.html" class="btn custom-btn d-none d-lg-block" style="display: none !important;">Register</a>
+                    <a href="ticket.html" class="btn custom-btn d-none d-lg-block" style="display: none !important; font-family: 'Capriola', sans-serif;">Register</a>
                 </div>
             </div>
         </nav>
@@ -162,8 +181,8 @@
         <section class="event-section section-padding">
             <div class="container" id="workshop">
                 <div class="row" style="padding: 0 5px;">
-                    <div class="col-12 text-center" style="border-radius: 3px; border: 3px solid blue; margin-top: 50px; background-color: #65d806b5;">
-                        <h1 class="event-title">WORKSHOPS</h1>
+                    <div class="col-12 text-center" style="border-radius: 3px; border: 3px solid white; margin-top: 50px; background-color: #65d806b5;">
+                        <h1 style="font-family: 'Capriola', sans-serif;" class="event-title">WORKSHOPS</h1>
                     </div>
                 </div>
                 <div class="row event-row" id="event-row">
@@ -199,8 +218,8 @@
 
             <div class="container" id="cultural">
                 <div class="row" style="padding: 0 5px;">
-                    <div class="col-12 text-center" style="border-radius: 3px; border: 3px solid blue; margin-top: 50px; background-color: rgba(255, 0, 251, 0.788);">
-                        <h1 class="event-title">CULTURAL</h1>
+                    <div class="col-12 text-center" style="border-radius: 3px; border: 3px solid white; margin-top: 50px; background-color: rgba(255, 0, 251, 0.788);">
+                        <h1 style="font-family: 'Capriola', sans-serif;" class="event-title">CULTURAL</h1>
                     </div>
                 </div>
                 <div class="row event-row" id="event-row">
@@ -275,122 +294,133 @@
 
             <div class="container" id="technical">
                 <div class="row" style="padding: 0 5px;">
-                    <div class="col-12 text-center" style="border-radius: 3px; border: 3px solid blue; margin-top: 50px; background-color: rgb(7, 161, 227);">
-                        <h1 class="event-title">TECHNICAL</h1>
+                    <div class="col-12 text-center" style="border-radius: 3px; border: 3px solid white; margin-top: 50px; background-color: rgb(7, 161, 227);">
+                        <h1 style="font-family: 'Capriola', sans-serif;" class="event-title">TECHNICAL</h1>
                     </div>
                 </div>
                 <div class="row event-row" id="event-row">
                     <div class="col-lg-4 col-md-6 col-12 event-col">
                         <div class="event-card">
-                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="event-image">
+                            <img src="images/Technical/treasure hunt.jpg" alt="Pro Show 1" class="event-image">
                             <button class="event-button">Register</button>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12 event-col">
                         <div class="event-card">
-                            <img src="images/Workshops/w2.jpg" alt="Pro Show 2" class="event-image">
+                            <img src="images/Technical/creocad.jpg" alt="Pro Show 2" class="event-image">
                             <button class="event-button">Register</button>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12 event-col">
                         <div class="event-card">
-                            <img src="images/Workshops/w3.jpg" alt="Pro Show 3" class="event-image">
+                            <img src="images/Technical/code jam.jpg" alt="Pro Show 3" class="event-image">
                             <button class="event-button">Register</button>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12 event-col">
                         <div class="event-card">
-                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="event-image">
+                            <img src="images/Technical/jpeg pg.jpg" alt="Pro Show 1" class="event-image">
                             <button class="event-button">Register</button>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12 event-col">
                         <div class="event-card">
-                            <img src="images/Workshops/w2.jpg" alt="Pro Show 2" class="event-image">
+                            <img src="images/Technical/gaming hub.jpg" alt="Pro Show 2" class="event-image">
                             <button class="event-button">Register</button>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12 event-col">
                         <div class="event-card">
-                            <img src="images/Workshops/w3.jpg" alt="Pro Show 3" class="event-image">
+                            <img src="images/Technical/code red.jpg" alt="Pro Show 3" class="event-image">
                             <button class="event-button">Register</button>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12 event-col">
                         <div class="event-card">
-                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="event-image">
+                            <img src="images/Technical/Splash off.jpg" alt="Pro Show 1" class="event-image">
                             <button class="event-button">Register</button>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12 event-col">
                         <div class="event-card">
-                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="event-image">
+                            <img src="images/Technical/glimpses of itiha.jpg" alt="Pro Show 1" class="event-image">
                             <button class="event-button">Register</button>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12 event-col">
                         <div class="event-card">
-                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="event-image">
+                            <img src="images/Technical/PITSTOP PG.jpg" alt="Pro Show 1" class="event-image">
                             <button class="event-button">Register</button>
                         </div>
                     </div>
-
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Technical/dr.driving pg.jpg" alt="Pro Show 1" class="event-image">
+                            <button class="event-button">Register</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                        <div class="event-card">
+                            <img src="images/Technical/HERTZ PG.jpg" alt="Pro Show 1" class="event-image">
+                            <button class="event-button">Register</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="container" id="expo">
                 <div class="row" style="padding: 0 5px;">
-                    <div class="col-12 text-center" style="border-radius: 3px; border: 3px solid blue; margin-top: 50px; background-color: rgb(237, 149, 7);">
-                        <h1 class="event-title">EXPO</h1>
+                    <div class="col-12 text-center" style="border-radius: 3px; border: 3px solid white; margin-top: 50px; background-color: rgb(237, 149, 7);">
+                        <h1 style="font-family: 'Capriola', sans-serif;" class="event-title">EXPO</h1>
                     </div>
                 </div>
                 <div class="row event-row" id="event-row">
                     <div class="col-lg-4 col-md-6 col-12 event-col">
                         <div class="event-card">
-                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="event-image">
+                            <img src="images/Expo/civil expo.jpg" alt="Expo 1" class="event-image">
                             <button class="event-button">Register</button>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12 event-col">
                         <div class="event-card">
-                            <img src="images/Workshops/w2.jpg" alt="Pro Show 2" class="event-image">
+                            <img src="images/Expo/CAREER EXPO.jpg" alt="Expo 2" class="event-image">
                             <button class="event-button">Register</button>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12 event-col">
                         <div class="event-card">
-                            <img src="images/Workshops/w3.jpg" alt="Pro Show 3" class="event-image">
+                            <img src="images/Expo/aero expo.jpg" alt="Expo 3" class="event-image">
                             <button class="event-button">Register</button>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12 event-col">
                         <div class="event-card">
-                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="event-image">
+                            <img src="images/Expo/ev expo.jpg" alt="Expo 4" class="event-image">
                             <button class="event-button">Register</button>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12 event-col">
+                    <!-- <div class="col-lg-4 col-md-6 col-12 event-col">
                         <div class="event-card">
-                            <img src="images/Workshops/w1.jpg" alt="Pro Show 1" class="event-image">
+                            <img src="images/Workshops/WORKSHOP_1 PAGE 1.png" alt="Pro Show 1" class="event-image">
                             <button class="event-button">Register</button>
                         </div>
-                    </div>
+                    </div>  -->
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="site-footer" id='site-footer'>
+    <footer class="site-footer" id="site-footer">
         <div class="site-footer-top">
             <div class="container">
                 <div class="row">
 
                     <div class="col-lg-6 col-12">
-                        <h2 class="text-white mb-lg-0">Itiha 2023</h2>
+                        <img src="images/itiha text/Itiha_2023.png" alt="logo" style="width: 30%; height: auto;">
                     </div>
 
-                    <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
+                    <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center" id="footer-icons">
                         <ul class="social-icon d-flex justify-content-lg-end">
                             <li class="social-icon-item">
                                 <a href="https://www.instagram.com/itihariet/?hl=en" class="social-icon-link" target="_blank">
@@ -419,31 +449,45 @@
             <div class="row">
 
                 <div class="col-lg-6 col-12 mb-4 pb-2">
-                    <img src="images/logo/Rajadhani_logo_Transparent_BG_1.png" alt="riet-logo" id="riet-footer-logo">
-
+                    <a href="https://riet.edu.in/" class="riet-footer-link">
+                        <img src="images/logo/Rajadhani_logo_Transparent_BG_1.png" alt="riet-logo" id="riet-footer-logo">
+                    </a>
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                    <h5 class="site-footer-title mb-3">Have a question?</h5>
+                    <h5 class="site-footer-title mb-3" style="font-family: 'Capriola', sans-serif;">Have a question?</h5>
+
+                    <span style="color:white; font-size:15px">Faculty Coordinator: Mr.Deepu Sajeev</span>
 
                     <p class="text-white d-flex mb-1">
-                        <a href="tel: 090-080-0760" class="site-footer-link">
-                            96567 69952
+                        <a href="tel: 77368 06371" class="site-footer-link" style="font-size: 13px;">
+                        77368 06371
+                        </a>
+                    </p>
+
+                    <span style="color:white; font-size:15px">Student Coordinator: Vivek R.B, Nihal Sabu</span>
+
+                    <p class="text-white d-flex mb-1">
+                        <a href="tel: 96567 69952" class="site-footer-link" style="font-size: 13px;">
+                        96567 69952,&nbsp;
+                        </a>
+                        <a href="tel: 95399 10685" class="site-footer-link" style="font-size: 13px;">
+                        95399 10685
                         </a>
                     </p>
 
                     <p class="text-white d-flex">
-                        <a href="mailto:hello@company.com" class="site-footer-link">
+                        <a href="mailto:itiha@rietedu.in" class="site-footer-link">
                             itiha@rietedu.in
                         </a>
                     </p>
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
-                    <h5 class="site-footer-title mb-3">Location</h5>
+                    <h5 class="site-footer-title mb-3" style="font-family: 'Capriola', sans-serif;">Location</h5>
 
                     <p class="text-white d-flex mt-3 mb-2">
-                        Rajadhani Institute of Engineering & Technology, Rajadhani Hills, Nedumparamdu P O, Nagaroor, Kerala 695102
+                        Rajadhani Institute of Engineering &amp; Technology, Rajadhani Hills, Nedumparamdu P O, Nagaroor, Kerala 695102
                     </p>
 
                     <a class="link-fx-1 color-contrast-higher mt-3" href="https://goo.gl/maps/HUum3tiocBH4yFDD6" target="_blank">
@@ -463,9 +507,8 @@
         <div class="site-footer-bottom">
             <div class="container">
                 <div class="row">
-
                     <div>
-                        <p class="development-team">Designed & Developed By Shahin M Hashim, Deepika S.R, Ajmal Sajeev, Sreehari A.L, Gautham S.B</p>
+                        <p class="development-team">Designed &amp; Developed By Shahin M Hashim, Deepika S.R, Sreehari A.L&nbsp;&nbsp;&amp;&nbsp;Gautham S.B</p>
                     </div>
 
                     <div class="col-lg-3 col-12 mt-5" style="width: 100%;">
