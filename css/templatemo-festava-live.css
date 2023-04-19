@@ -239,11 +239,12 @@ strong {
 }
 
 #section_5 {
-    background-image: url('../images/anime/w7.jpg');
+    background-image: url('../images/anime/jujutsu.jpg');
     background-color: #ccc5ed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 100vh;
 }
 
 #section_6 {
@@ -703,8 +704,8 @@ strong {
     border-radius: var(--border-radius-medium);
     backdrop-filter: blur(5px) saturate(180%);
     -webkit-backdrop-filter: blur(5px) saturate(180%);
-    margin: 20px;
-    padding: 35px;
+    margin: 5px;
+    padding: 15px;
     transition: all 0.5s ease;
     transform: translateY(100%);
     position: absolute;
@@ -1118,6 +1119,10 @@ tr {
     #footer-icons {
         margin-top: 10px;
         padding-left: 8px;
+    }
+
+    #ticket2{
+        margin-top: 50px;
     }
 }
 
