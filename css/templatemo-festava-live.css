@@ -1124,6 +1124,11 @@ tr {
     #ticket2{
         margin-top: 50px;
     }
+
+    #abt-video
+    {
+        margin-top: 50px !important;
+    }
 }
 
 
